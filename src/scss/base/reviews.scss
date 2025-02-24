@@ -1,0 +1,127 @@
+@use "../utils/mixins";
+
+:root {
+  --bg-color: #0d1117;
+  --card-bg: #1c1f26;
+  --text-color: #ffffff;
+  --secondary-text: #a1a1a1;
+  --primary-blue: #4a90e2;
+}
+
+.reviews-container {
+  margin: 3rem auto;
+  width: 100%;
+  text-align: center;
+
+  @include mixins.respond(desktop) {
+    width: 80%;
+    margin: 6rem auto;
+  }
+}
+
+.reviews-title {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 2.5rem;
+  line-height: 3.5rem;
+  transition: 0.3s;
+  @include mixins.respond(mobile) {
+    font-size: 2rem;
+  }
+  @include mixins.respond(laptop) {
+    font-size: 2.4rem;
+  }
+  @include mixins.respond(desktop) {
+    font-size: 2.75rem;
+  }
+}
+
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  //   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  align-content: flex-start;
+  align-items: flex-start;
+
+   @include mixins.respond(tablet) {
+       justify-content: center;
+    }
+
+    @include mixins.respond(laptop) {
+        justify-content: center; 
+    }
+
+    @include mixins.respond(desktop) {
+       
+    }
+
+
+}
+
+.review-card {
+  display: flex;
+  background: var(--bg-grey-card);
+  border-radius: 8px;
+  padding: 0.75rem 1.0rem;
+  text-align: left;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 522px;
+
+  @include mixins.respond(tablet) {
+  }
+
+  @include mixins.respond(laptop) {
+    width: 450px;
+  }
+
+  @include mixins.respond(desktop) {
+    width: 522px;
+  }
+}
+
+.review-avatar {
+  flex-shrink: 0; /* Запрещает сжатие изображения */
+  align-self: flex-start; /* Оставляет изображение в верхней части карточки */
+}
+
+.review-avatar img {
+  width: 81px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  // border: 2px solid var(--primary-blue);
+}
+
+.review-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.profit {
+  color: var(--main-text-color);
+  opacity: 0.5;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.load-more {
+  background: transparent;
+  color: var(--lite-blue);
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--lite-blue);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 4.5rem;
+  transition: 0.3s;
+}
+
+.load-more:hover {
+  background: var(--lite-blue);
+  color: var(--secondary-text-color);
+}

@@ -6,6 +6,7 @@ import "./js/count.js";
 import "./js/toggle.js";
 import "./js/accordion.js";
 import "./js/mobile-menu.js";
+import "./js/fade-in.js";
 import { createTradeCard } from "./components/card.js";
 
 document.addEventListener("DOMContentLoaded", () => {

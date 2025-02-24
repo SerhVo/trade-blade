@@ -1,8 +1,19 @@
 /* ========================features=======================*/
 @use "../utils/mixins";
 .features {
-  margin-bottom: 4.5rem;
+  margin: 4.5rem auto;
   color: var(--main-text-color);
+  @include mixins.respond(tablet) {
+    margin: 5rem auto;
+  }
+
+  @include mixins.respond(laptop) {
+    margin: 5.5rem auto;
+  }
+
+  @include mixins.respond(desktop) {
+    margin: 6rem auto;
+  }
 }
 
 .features-container {
