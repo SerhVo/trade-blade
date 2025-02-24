@@ -423,7 +423,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createTradeCard: () => (/* binding */ createTradeCard)\n/* harmony export */ });\n/* harmony import */ var _styles_card_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/card.css */ \"./src/styles/card.css\");\n\nfunction createTradeCard(title, profit, goal, date) {\n  var card = document.createElement(\"div\");\n  card.classList.add(\"swiper-slide\");\n  card.innerHTML = \"\\n    <div class=\\\"trade-card__header\\\">\\n      <h2>\".concat(title, \"</h2>\\n      <span>SPOT \\u2022 1 \\u043C\\u0438\\u043D. \\u043D\\u0430\\u0437\\u0430\\u0434</span>\\n    </div>\\n    <div class=\\\"trade-card__profit\\\">\\n      <p>\\u041F\\u0420\\u0418\\u0411\\u042B\\u041B\\u042C</p>\\n      <h3>\").concat(profit, \"% <span class=\\\"arrow-up\\\">\\u2191</span></h3>\\n    </div>\\n    <div class=\\\"trade-card__footer\\\">\\n      <p> \").concat(goal, \"</p>\\n      <p class=\\\"entry-date\\\">\\u0414\\u0430\\u0442\\u0430 \\u0432\\u0445\\u043E\\u0434\\u0430 \").concat(date, \"</p>\\n    </div>\\n  \");\n  return card;\n}\n\n//# sourceURL=webpack://tradeblade/./src/components/card.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createTradeCard: () => (/* binding */ createTradeCard)\n/* harmony export */ });\n/* harmony import */ var _src_scss_base_card_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../src/scss/base/card.scss */ \"./src/scss/base/card.scss\");\n\nfunction createTradeCard(title, profit, goal, date) {\n  var card = document.createElement(\"div\");\n  card.classList.add(\"swiper-slide\");\n  card.innerHTML = \"\\n    <div class=\\\"trade-card__header\\\">\\n      <h2>\".concat(title, \"</h2>\\n      <span>SPOT \\u2022 1 \\u043C\\u0438\\u043D. \\u043D\\u0430\\u0437\\u0430\\u0434</span>\\n    </div>\\n    <div class=\\\"trade-card__profit\\\">\\n      <p>\\u041F\\u0420\\u0418\\u0411\\u042B\\u041B\\u042C</p>\\n      <h3>\").concat(profit, \"% <span class=\\\"arrow-up\\\">\\u2191</span></h3>\\n    </div>\\n    <div class=\\\"trade-card__footer\\\">\\n      <p> \").concat(goal, \"</p>\\n      <p class=\\\"entry-date\\\">\\u0414\\u0430\\u0442\\u0430 \\u0432\\u0445\\u043E\\u0434\\u0430 \").concat(date, \"</p>\\n    </div>\\n  \");\n  return card;\n}\n\n//# sourceURL=webpack://tradeblade/./src/components/card.js?");
 
 /***/ }),
 
@@ -434,7 +434,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _styles_mobile_menu_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/mobile-menu.css */ \"./src/styles/mobile-menu.css\");\n/* harmony import */ var _styles_hero_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/hero.css */ \"./src/styles/hero.css\");\n/* harmony import */ var _js_swiper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/swiper.js */ \"./src/js/swiper.js\");\n/* harmony import */ var _styles_swiper_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/swiper.css */ \"./src/styles/swiper.css\");\n/* harmony import */ var _styles_figures_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/figures.css */ \"./src/styles/figures.css\");\n/* harmony import */ var _js_count_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/count.js */ \"./src/js/count.js\");\n/* harmony import */ var _js_toggle_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/toggle.js */ \"./src/js/toggle.js\");\n/* harmony import */ var _js_toggle_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_toggle_js__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _js_accordion_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/accordion.js */ \"./src/js/accordion.js\");\n/* harmony import */ var _js_accordion_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_js_accordion_js__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _js_mobile_menu_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/mobile-menu.js */ \"./src/js/mobile-menu.js\");\n/* harmony import */ var _js_mobile_menu_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_js_mobile_menu_js__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var _styles_header_nav_footer_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./styles/header-nav-footer.css */ \"./src/styles/header-nav-footer.css\");\n/* harmony import */ var _components_card_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/card.js */ \"./src/components/card.js\");\n\n\n\n\n\n\n\n\n\n\n\n\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  var swiperWrapper = document.querySelector(\".swiper-wrapper\");\n\n  // Данные карточек\n  var cardsData = [{\n    title: \"NEAR/USDT\",\n    profit: \"58.6206\",\n    goal: \"Цель 4\",\n    date: \"06.10.2022\"\n  }, {\n    title: \"BTC/USDT\",\n    profit: \"12.45\",\n    goal: \"Цель 2\",\n    date: \"10.11.2023\"\n  }, {\n    title: \"ETH/USDT\",\n    profit: \"25.30\",\n    goal: \"Цель 3\",\n    date: \"15.08.2023\"\n  }, {\n    title: \"LTC/USDT\",\n    profit: \"30.60\",\n    goal: \"Цель 1\",\n    date: \"20.07.2023\"\n  }, {\n    title: \"BCH/USDT\",\n    profit: \"20.50\",\n    goal: \"Цель 5\",\n    date: \"25.06.2023\"\n  }, {\n    title: \"XRP/USDT\",\n    profit: \"15.90\",\n    goal: \"Цель 4\",\n    date: \"30.05.2023\"\n  }, {\n    title: \"ADA/USDT\",\n    profit: \"22.80\",\n    goal: \"Цель 3\",\n    date: \"05.05.2023\"\n  }, {\n    title: \"DOT/USDT\",\n    profit: \"18.70\",\n    goal: \"Цель 2\",\n    date: \"10.05.2023\"\n  }, {\n    title: \"SOL/USDT\",\n    profit: \"23.50\",\n    goal: \"Цель 1\",\n    date: \"15.04.2023\"\n  }];\n  swiperWrapper.innerHTML = \"\";\n  cardsData.forEach(function (data) {\n    var card = (0,_components_card_js__WEBPACK_IMPORTED_MODULE_11__.createTradeCard)(data.title, data.profit, data.goal, data.date);\n    swiperWrapper.appendChild(card);\n  });\n});\nconsole.log(\"Webpack настроен! 🚀\");\n\n//# sourceURL=webpack://tradeblade/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/index.scss */ \"./src/scss/index.scss\");\n/* harmony import */ var _js_swiper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/swiper.js */ \"./src/js/swiper.js\");\n/* harmony import */ var _js_count_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/count.js */ \"./src/js/count.js\");\n/* harmony import */ var _js_toggle_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/toggle.js */ \"./src/js/toggle.js\");\n/* harmony import */ var _js_toggle_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_toggle_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _js_accordion_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/accordion.js */ \"./src/js/accordion.js\");\n/* harmony import */ var _js_accordion_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_js_accordion_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _js_mobile_menu_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/mobile-menu.js */ \"./src/js/mobile-menu.js\");\n/* harmony import */ var _js_mobile_menu_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_js_mobile_menu_js__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _components_card_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/card.js */ \"./src/components/card.js\");\n\n\n\n\n\n\n\n\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  var swiperWrapper = document.querySelector(\".swiper-wrapper\");\n\n  // Данные карточек\n  var cardsData = [{\n    title: \"NEAR/USDT\",\n    profit: \"58.6206\",\n    goal: \"Цель 4\",\n    date: \"06.10.2022\"\n  }, {\n    title: \"BTC/USDT\",\n    profit: \"12.45\",\n    goal: \"Цель 2\",\n    date: \"10.11.2023\"\n  }, {\n    title: \"ETH/USDT\",\n    profit: \"25.30\",\n    goal: \"Цель 3\",\n    date: \"15.08.2023\"\n  }, {\n    title: \"LTC/USDT\",\n    profit: \"30.60\",\n    goal: \"Цель 1\",\n    date: \"20.07.2023\"\n  }, {\n    title: \"BCH/USDT\",\n    profit: \"20.50\",\n    goal: \"Цель 5\",\n    date: \"25.06.2023\"\n  }, {\n    title: \"XRP/USDT\",\n    profit: \"15.90\",\n    goal: \"Цель 4\",\n    date: \"30.05.2023\"\n  }, {\n    title: \"ADA/USDT\",\n    profit: \"22.80\",\n    goal: \"Цель 3\",\n    date: \"05.05.2023\"\n  }, {\n    title: \"DOT/USDT\",\n    profit: \"18.70\",\n    goal: \"Цель 2\",\n    date: \"10.05.2023\"\n  }, {\n    title: \"SOL/USDT\",\n    profit: \"23.50\",\n    goal: \"Цель 1\",\n    date: \"15.04.2023\"\n  }];\n  swiperWrapper.innerHTML = \"\";\n  cardsData.forEach(function (data) {\n    var card = (0,_components_card_js__WEBPACK_IMPORTED_MODULE_7__.createTradeCard)(data.title, data.profit, data.goal, data.date);\n    swiperWrapper.appendChild(card);\n  });\n});\nconsole.log(\"Webpack настроен! 🚀\");\n\n//# sourceURL=webpack://tradeblade/./src/index.js?");
 
 /***/ }),
 
@@ -465,7 +465,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var coun
   \*******************************/
 /***/ (() => {
 
-eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var burger = document.querySelector(\".burger-menu\");\n  var menu = document.querySelector(\".mobile-menu\");\n  var closeBtn = document.querySelector(\".close-menu\");\n  var menuLinks = document.querySelectorAll(\".mobile-menu a\");\n  burger.addEventListener(\"click\", function () {\n    menu.classList.add(\"open\");\n  });\n  closeBtn.addEventListener(\"click\", function () {\n    menu.classList.remove(\"open\");\n  });\n  menuLinks.forEach(function (link) {\n    link.addEventListener(\"click\", function () {\n      menu.classList.remove(\"open\");\n    });\n  });\n});\n\n//# sourceURL=webpack://tradeblade/./src/js/mobile-menu.js?");
+eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var burger = document.querySelector(\".burger-menu\");\n  var menu = document.querySelector(\".mobile-menu\");\n  var closeBtn = document.querySelector(\".close-menu\");\n\n  // Функция для переключения меню и бургера\n  var toggleMenu = function toggleMenu() {\n    menu.classList.toggle(\"open\");\n    burger.classList.toggle(\"open\");\n  };\n\n  // Открытие меню\n  burger.addEventListener(\"click\", toggleMenu);\n\n  // Закрытие меню\n  closeBtn.addEventListener(\"click\", toggleMenu);\n\n  // Закрытие при клике на ссылку (делегирование)\n  menu.addEventListener(\"click\", function (event) {\n    if (event.target.tagName === \"A\") {\n      toggleMenu();\n    }\n  });\n\n  // Закрытие меню при нажатии Escape\n  document.addEventListener(\"keydown\", function (event) {\n    if (event.key === \"Escape\" && menu.classList.contains(\"open\")) {\n      toggleMenu();\n    }\n  });\n});\n\n//# sourceURL=webpack://tradeblade/./src/js/mobile-menu.js?");
 
 /***/ }),
 
@@ -490,6 +490,28 @@ eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var toggl
 
 /***/ }),
 
+/***/ "./src/scss/base/card.scss":
+/*!*********************************!*\
+  !*** ./src/scss/base/card.scss ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://tradeblade/./src/scss/base/card.scss?");
+
+/***/ }),
+
+/***/ "./src/scss/index.scss":
+/*!*****************************!*\
+  !*** ./src/scss/index.scss ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://tradeblade/./src/scss/index.scss?");
+
+/***/ }),
+
 /***/ "./src/styles.css":
 /*!************************!*\
   !*** ./src/styles.css ***!
@@ -498,72 +520,6 @@ eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var toggl
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://tradeblade/./src/styles.css?");
-
-/***/ }),
-
-/***/ "./src/styles/card.css":
-/*!*****************************!*\
-  !*** ./src/styles/card.css ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://tradeblade/./src/styles/card.css?");
-
-/***/ }),
-
-/***/ "./src/styles/figures.css":
-/*!********************************!*\
-  !*** ./src/styles/figures.css ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://tradeblade/./src/styles/figures.css?");
-
-/***/ }),
-
-/***/ "./src/styles/header-nav-footer.css":
-/*!******************************************!*\
-  !*** ./src/styles/header-nav-footer.css ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://tradeblade/./src/styles/header-nav-footer.css?");
-
-/***/ }),
-
-/***/ "./src/styles/hero.css":
-/*!*****************************!*\
-  !*** ./src/styles/hero.css ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://tradeblade/./src/styles/hero.css?");
-
-/***/ }),
-
-/***/ "./src/styles/mobile-menu.css":
-/*!************************************!*\
-  !*** ./src/styles/mobile-menu.css ***!
-  \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://tradeblade/./src/styles/mobile-menu.css?");
-
-/***/ }),
-
-/***/ "./src/styles/swiper.css":
-/*!*******************************!*\
-  !*** ./src/styles/swiper.css ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://tradeblade/./src/styles/swiper.css?");
 
 /***/ })
 

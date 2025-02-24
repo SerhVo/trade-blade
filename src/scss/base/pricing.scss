@@ -37,7 +37,7 @@
   display: inline-flex;
   justify-content: space-between;
   background: var(--purple-color);
-  padding: 0.5rem;
+  padding: 0.25rem;
   margin-bottom: 2.75rem;
   width: 100%;
   @include mixins.respond(laptop) {
@@ -78,7 +78,7 @@
   background: transparent;
   border: none;
   padding: 0.5rem 2rem;
-  color: var(--lite-purple);
+  color: var(--lite-blue);
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
@@ -95,8 +95,8 @@
 .toggle-slider {
   position: absolute;
   top: 5px;
-  left: 0;
-  width: 50%;
+  left: 5px;
+  width: 49%;
   height: 85%;
   background: var(--lite-blue);
   border-radius: 0.25rem;

@@ -55,14 +55,14 @@
 }
 
 .how-to-step {
-  border-left: 0.15rem solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid var(--white-color);
   padding-left: 2.4375rem;
   flex: 1;
   text-align: left;
   @include mixins.respond(tablet) {
     border-left: none;
     padding-left: 0;
-    border-top: 0.15rem solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid var(--white-color);
     padding-top: 2.4375rem;
   }
 }
