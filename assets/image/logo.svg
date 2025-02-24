@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" viewBox="0 0 132 64">
+  <defs>
+    <path id="c" fill="#5E47FF" d="M14.44 13.1 65 13.03l-15.04 5.85H17.78l-3.34-5.78Z"/>
+  </defs>
+  <g clip-path="url(#a)">
+    <path fill="#fff" d="M62.09 31.07H55.6l-3.38 15.56h6.98c5.03 0 6.52-2.77 6.54-4.95.01-1.9-1.07-2.68-2.09-3.02l.04-.17a3.9 3.9 0 0 0 3.18-3.88c.02-2.31-1.77-3.54-4.78-3.54Zm-5.27 12.38.69-3.1h2.76c1.05 0 1.67.44 1.67 1.34-.01.93-.72 1.76-2.21 1.76h-2.9Zm1.37-6.27.65-2.94h2.54c1.05 0 1.64.4 1.63 1.26 0 .88-.67 1.68-2.2 1.68H58.2Zm10.71-6.11-3.4 15.56h11.16l.74-3.38h-7.1l2.64-12.18h-4.05Zm15.62 0L76.9 46.3l-.07.33h3.84l1.5-3.25h4.54l.1 3.25h3.68l.06-.33-1-15.23h-5.03Zm-.84 9.05 2.63-5.67h.17l.14 5.67h-2.94Z"/>
+    <path fill="#fff" d="M98.2 31.07h-4.37l-3.38 15.56h5.38c6.79 0 9-5.06 9.04-9.38.04-4.01-2.6-6.18-6.66-6.18Zm-3.05 12.27 1.93-8.99h.97c1.88 0 2.94 1.04 2.93 3.02-.03 2.88-1.48 5.97-4.59 5.97h-1.24Zm11.97-12.27-3.38 15.56h11.6l.69-3.18h-7.65l.68-3.07h6.43l.68-3.18h-6.42l.64-2.96h7.5l.69-3.17h-11.46ZM68.33 13.06l-.72 3.32H72l-2.66 12.24h4l2.67-12.24h4.4l.72-3.32h-12.8Zm19.6 0h-6.3l-3.38 15.56h3.92l1.33-6.12h.21l3.15 6.12h3.98l.06-.33-3.18-5.77c3.88-.32 5.31-2.56 5.34-5.27.02-2.68-1.96-4.2-5.13-4.2Zm-3.81 6.59.75-3.42h2.5c1.21 0 1.9.49 1.9 1.44-.01 1-.73 1.98-2.5 1.98h-2.65Z"/>
+    <path fill="#fff" d="m97.78 13.06-7.63 15.23-.07.33h3.85l1.5-3.25h4.54l.09 3.25h3.68l.07-.33-1-15.23h-5.03Zm-.84 9.05 2.62-5.67h.17l.15 5.67h-2.94Z"/>
+    <path fill="#fff" d="M111.46 13.06h-4.37l-3.39 15.56h5.39c6.78 0 9-5.06 9.04-9.38.03-4.01-2.6-6.18-6.67-6.18Zm-3.06 12.27 1.94-8.99h.97c1.87 0 2.94 1.04 2.92 3.01-.02 2.89-1.47 5.98-4.58 5.98h-1.25Zm11.98-12.27-3.39 15.56h11.6l.7-3.18h-7.65l.67-3.07h6.43l.69-3.18H123l.64-2.96h7.5l.68-3.17h-11.46Z"/>
+    <path fill="#5E47FF" d="M25.34 46.67 0 2.92l12.59 10.1L28.67 40.9l-3.33 5.78Zm23.78-26.49L23.92 64l2.44-15.95 16.1-27.87h6.66ZM14.44 13.1 65 13.03l-15.04 5.85H17.78l-3.34-5.78Z"/>
+    <path fill="#5E47FF" d="M25.34 46.67 0 2.92l12.59 10.1L28.67 40.9l-3.33 5.78Zm23.78-26.49L23.92 64l2.44-15.95 16.1-27.87h6.66Z"/>
+    <g filter="url(#b)">
+      <use xlink:href="#c"/>
+    </g>
+    <path fill="#57E1FF" d="m29.58 37.59 9.53-16.5H20.05l9.53 16.5Z"/>
+    <g filter="url(#d)">
+      <path fill="#5E47FF" d="M25.34 46.67 0 2.92l12.59 10.1L28.67 40.9l-3.33 5.78Z"/>
+    </g>
+    <g filter="url(#e)">
+      <path fill="#5E47FF" d="M49.12 20.18 23.92 64l2.44-15.95 16.1-27.87h6.66Z"/>
+    </g>
+    <use xlink:href="#c"/>
+  </g>
+  <defs>
+    <filter id="b" width="90.55" height="45.85" x="-5.56" y="-6.97" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur result="effect1_foregroundBlur_554_141" stdDeviation="10"/>
+    </filter>
+    <filter id="d" width="68.67" height="83.74" x="-20" y="-17.08" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur result="effect1_foregroundBlur_554_141" stdDeviation="10"/>
+    </filter>
+    <filter id="e" width="65.21" height="83.82" x="3.91" y=".18" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur result="effect1_foregroundBlur_554_141" stdDeviation="10"/>
+    </filter>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h131.83v64H0z"/>
+    </clipPath>
+  </defs>
+</svg>
