@@ -1,0 +1,34 @@
+/* ========== КОНТЕЙНЕР  ========== */
+@use "./mixins"; 
+
+.container {
+    width: 100vw;
+    // max-width: 1280px;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+
+
+    @include mixins.respond(mobile) {
+        flex-direction: column;
+        align-items: center;
+        max-width: 480px;
+        padding: 0 1rem;
+    }
+
+    @include mixins.respond(tablet) {
+        max-width: 768px;
+        padding: 0 1rem;
+    }
+
+    @include mixins.respond(laptop) {
+        max-width: 1024px;
+        font-size: 14px !important;
+    }
+
+    @include mixins.respond(desktop) {
+        max-width: 1280px;
+    }
+}

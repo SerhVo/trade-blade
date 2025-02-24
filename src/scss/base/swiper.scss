@@ -1,0 +1,64 @@
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-container::before,
+.swiper-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.swiper-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent);
+}
+
+.swiper-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent);
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 130px;
+  background: linear-gradient(135deg, #4a90e2, #8e44ad);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.05);
+}
+
+.swiper-scrollbar {
+  background: rgba(255, 255, 255, 0.2);
+  height: 5px;
+  margin-top: 10px;
+}
+
+.swiper-scrollbar-drag {
+  background: #6073a1;
+
+  height: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}

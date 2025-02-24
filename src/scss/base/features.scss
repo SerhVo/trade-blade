@@ -1,0 +1,99 @@
+/* ========================features=======================*/
+@use "../utils/mixins";
+.features {
+  padding: 6rem 0;
+  color: var(--main-text-color);
+}
+
+.features-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0.8125rem auto;
+  @include mixins.respond(tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @include mixins.respond(laptop) {
+    justify-content: center;
+  }
+  @include mixins.respond(desktop) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+/* Заголовок */
+.features-title h2 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  font-weight: bold;
+  text-align: left;
+  line-height: 3.5rem;
+  transition: 0.3s;
+  margin: 2.5rem auto;
+  @include mixins.respond(mobile) {
+    font-size: 2rem;
+    margin: 3.5rem auto;
+  }
+  @include mixins.respond(laptop) {
+    font-size: 2.4rem;
+    margin: 4rem auto;
+  }
+  @include mixins.respond(desktop) {
+    font-size: 2.75rem;
+    margin: 0 3rem 0 0;
+  }
+}
+
+.features-list {
+  display: grid;
+
+  gap: 1.3125rem;
+  max-width: 800px;
+
+  @include mixins.respond(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Элемент */
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Иконки */
+.feature-item img {
+  width: 56px;
+  height: 56px;
+}
+
+/* Заголовки */
+.feature-item h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  @include mixins.respond(tablet) {
+    font-size: 1.4rem;
+  }
+
+  @include mixins.respond(laptop) {
+    font-size: 1.6rem;
+  }
+
+  @include mixins.respond(desktop) {
+    font-size: 1.75rem;
+  }
+}
+
+.feature-item p {
+  font-size: 0.875rem;
+  color: var(--main-text-color);
+  opacity: 0.8;
+  @include mixins.respond(laptop) {
+    font-size: 1rem;
+  }
+}

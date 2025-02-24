@@ -1,0 +1,225 @@
+/*-------------------- pricing ------------------*/
+@use "../utils/mixins";
+
+.pricing {
+  background: var(--bg-color);
+  color: var(--main-text-color);
+  text-align: left;
+  margin: 3.5rem 0;
+  @include mixins.respond(desktop) {
+    margin: 6rem 0 6rem 13.56rem;
+  }
+}
+
+.pricing-title {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 2.5rem;
+  line-height: 3.5rem;
+  transition: 0.3s;
+  @include mixins.respond(mobile) {
+    font-size: 2rem;
+  }
+  @include mixins.respond(laptop) {
+    font-size: 2.4rem;
+  }
+  @include mixins.respond(desktop) {
+    font-size: 2.75rem;
+  }
+}
+
+/* Переключатель */
+.toggle-container {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-between;
+  background: var(--purple-color);
+  padding: 0.5rem;
+  margin-bottom: 2.75rem;
+  width: 100%;
+  @include mixins.respond(laptop) {
+    width: 90%;
+  }
+
+  @include mixins.respond(desktop) {
+    width: 70%;
+  }
+}
+
+.toggle-box {
+  width: 100%;
+}
+
+.toggle-box li {
+  flex: 1;
+  @include mixins.respond(tablet) {
+    width: 50%;
+    flex: 0;
+  }
+}
+
+.toggle-box li:last-child {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  padding: 0.5rem 2rem;
+  color: var(--lite-purple);
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  width: 50%;
+}
+
+.toggle-btn.active {
+  color: var(--secondary-text-color);
+  font-weight: bold;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 50%;
+  height: 85%;
+  background: var(--lite-blue);
+  border-radius: 0.25rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Карточки тарифов */
+.pricing-cards {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  flex-direction: column;
+  /* max-width: 70rem; */
+  @include mixins.respond(tablet) {
+    flex-direction: row;
+  }
+
+  @include mixins.respond(laptop) {
+    justify-content: space-around;
+  }
+  @include mixins.respond(desktop) {
+    justify-content: flex-start;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--lite-purple);
+  text-align: left;
+
+  transition: transform 0.3s ease;
+
+  @include mixins.respond(laptop) {
+    width: 25.8rem;
+  }
+}
+
+.standard {
+  background: var(--bg-color);
+}
+
+.vip {
+  background: var(--lite-purple);
+}
+
+/* Список */
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.card li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 3.5rem;
+}
+
+/* Цена */
+.price {
+  display: flex;
+  align-items: center;
+  font-size: 2.18rem;
+  font-weight: 400;
+}
+
+.price-btn-box ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount {
+  color: var(--lite-green);
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  display: inline-block;
+  transform: translateY(-5px);
+}
+
+/* Кнопка пробного периода */
+.try-btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--bg-color);
+  background: var(--lite-blue);
+  border-radius: 0.4rem;
+  line-height: 1.2;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.try-btn:hover {
+  transform: scale(1.03);
+}
+
+.trial-text {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--grey-color);
+}
+
+.duration {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  margin-bottom: 0.5rem;
+  background-color: var(--grey-color);
+  color: var(--main-text-color);
+  cursor: pointer;
+}

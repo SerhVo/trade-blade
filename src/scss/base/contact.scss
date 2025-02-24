@@ -1,0 +1,72 @@
+/* ======================= контакты ======================= */
+@use "../utils/mixins";
+.contact {
+  background: var(--lite-purple);
+}
+
+.contact-container {
+  padding: 1rem;
+  @include mixins.respond(desktop) {
+    padding: 2.5rem 5rem;
+  }
+}
+
+.contact-container ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  align-items: stretch;
+  width: 100%;
+  @include mixins.respond(laptop) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.contact-container ul li {
+  @include mixins.respond(laptop) {
+    width: 47%;
+  }
+}
+
+.contact-container ul li h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+  color: var(--main-text-color);
+  @include mixins.respond(tablet) {
+    font-size: 1.4rem;
+  }
+
+  @include mixins.respond(laptop) {
+    font-size: 1.6rem;
+  }
+
+  @include mixins.respond(desktop) {
+    font-size: 1.75rem;
+  }
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--purple-color);
+  border-radius: 0.25rem;
+  opacity: 0.8;
+  @include mixins.respond(tablet) {
+    flex-direction: row;
+  }
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 1.25rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  background-color: var(--purple-color);
+  transition: 0.3s;
+}

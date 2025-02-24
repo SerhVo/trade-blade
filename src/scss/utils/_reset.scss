@@ -1,0 +1,81 @@
+/* ======= Общий сброс ======= */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Убираем стандартное выделение у ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Убираем списочные маркеры */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Обнуляем границы у таблиц */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Базовые стили для шрифтов */
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--main-text-color);
+    background-color: var(--bg-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Убираем обводку у фокусных элементов (но сохраняем для клавиатуры) */
+button,
+input,
+textarea {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* Фокусный стиль для клавиатуры */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #6752f5;
+}
+
+/* Убираем стрелки у input[type="number"] в Chrome/Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Убираем стандартный стиль кнопок */
+button {
+    cursor: pointer;
+}
+
+/* Убираем выделение при нажатии на мобилках */
+button,
+input,
+textarea {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Убираем стили у изображений */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

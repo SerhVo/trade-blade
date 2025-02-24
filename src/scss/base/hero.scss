@@ -1,0 +1,235 @@
+@use "../utils/mixins";
+
+#hero {
+  text-align: center;
+  width: 100%;
+
+  @include mixins.respond(mobile) {
+    margin: 2rem 0;
+  }
+
+  @include mixins.respond(laptop) {
+    margin: 5rem 0 2.5rem;
+  }
+
+  @include mixins.respond(desktop) {
+    margin: 10rem 0 4.5rem;
+  }
+}
+
+#hero ul {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  width: 100%;
+  @include mixins.respond(tablet) {
+    flex-direction: row;
+  }
+}
+
+#hero ul li {
+  width: 100%;
+
+  @include mixins.respond(tablet) {
+    width: 50%;
+  }
+
+  @include mixins.respond(laptop) {
+    width: 50%;
+  }
+
+  @include mixins.respond(desktop) {
+    width: 50%;
+  }
+}
+
+.hero-text {
+  text-align: left;
+
+  // @include mixins.respond(laptop) {
+  //   margin-right: 2.5rem;
+  // }
+
+  // @include mixins.respond(desktop) {
+  //   margin-right: 8.125rem;
+  // }
+}
+
+.hero-text h1 {
+  color: var(--white-color);
+  text-transform: uppercase;
+  letter-spacing: -0.125rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+  transition: 0.3s;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+
+  @include mixins.respond(mobile) {
+    font-size: 2.2rem;
+  }
+  @include mixins.respond(laptop) {
+    font-size: 2.5rem;
+  }
+  @include mixins.respond(desktop) {
+    font-size: 3.75rem;
+  }
+}
+
+.hero-text h4 {
+  color: var(--white-color);
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  transition: 0.3s;
+  margin-bottom: 1.5rem;
+
+  @include mixins.respond(desktop) {
+    font-size: 1rem;
+  }
+}
+
+.hero-form {
+  width: 100%;
+  height: auto;
+  background-color: var(--purple-color);
+  font-size: 0.875rem;
+  @include mixins.respond(tablet) {
+    width: 80%;
+  }
+  @include mixins.respond(laptop) {
+    font-size: 1rem;
+  }
+}
+
+.hero-form form {
+  width: 100%;
+  display: flex;
+}
+
+.hero-form input {
+  width: 100%;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  background-color: var(--purple-color);
+  transition: 0.3s;
+
+  @include mixins.respond(laptop) {
+    margin-left: 1rem;
+  }
+
+  @include mixins.respond(desktop) {
+    margin-left: 1rem;
+  }
+}
+
+.hero-btn {
+  padding: 0.6875rem 1.5rem;
+  margin: 0.1rem;
+  border: none;
+  border-radius: 0.25rem;
+  letter-spacing: 0.05rem;
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  background-color: var(--nav-btn-color);
+  transition: 0.3s;
+  cursor: pointer;
+
+  @include mixins.respond(laptop) {
+    padding: 0.8rem 1.5rem;
+  }
+
+  @include mixins.respond(desktop) {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.hero-text p {
+  color: var(--white-color);
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 400;
+  opacity: 0.3;
+  margin-top: 0.75rem;
+}
+
+/* -----  dash-box -----*/
+
+.dash-box {
+  display: flex;
+  margin-bottom: 2.0625rem;
+  justify-content: flex-start;
+}
+
+.box-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 85%;
+  @include mixins.respond(tablet) {
+    width: 60%;
+  }
+
+  @include mixins.respond(laptop) {
+    width: 70%;
+  }
+
+  @include mixins.respond(desktop) {
+    width: 100%;
+  }
+}
+
+/* Стиль для первого блока */
+// .box {
+//   width: 200px;
+//   padding: 15px;
+//   border-radius: 5px;
+//   text-align: left;
+//   color: rgba(135, 111, 255, 0.8);
+//   font-size: 26px;
+//   font-weight: 500;
+// }
+
+// .dashed-box {
+//   border: 1px dashed rgba(135, 111, 255, 0.8);
+//   padding: 20px;
+//   width: 200px;
+// }
+
+// .solid-box {
+//   background-color: #6752f5;
+//   color: white;
+//   border-radius: 5px;
+//   padding: 15px;
+//   left: 160px;
+//   top: 45px;
+//   box-shadow: 5px 5px 15px rgba(103, 82, 245, 0.5);
+// }
+
+// /* Линия соединения */
+// .line {
+//   width: 40px;
+//   height: 2px;
+//   background-color: rgba(135, 111, 255, 0.5);
+//   transform: rotate(40deg);
+// }
+
+// .line2 {
+//   top: 165px;
+//   left: 120px;
+// }
+
+// .percentage {
+//   font-family: "IBM Plex Sans";
+//   font-size: 28px;
+//   font-weight: 400;
+//   margin-top: 20px;
+// }

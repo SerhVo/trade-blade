@@ -15,7 +15,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"], // Вынос CSS в отдельный файл
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"], // Вынос CSS в отдельный файл
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
@@ -33,6 +33,14 @@ module.exports = {
             presets: ["@babel/preset-env"], // Поддержка новых JS-фич
           },
         },
+      },
+      {
+        test: /\.html$/,
+        use: ["html-loader"], // Загружаем HTML как строку
+      },
+      {
+        test: /\.scss$/i, // Обрабатываем SCSS
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
     ],
   },

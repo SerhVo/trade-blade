@@ -1,0 +1,21 @@
+@use "./utils/mixins"; 
+@use "./utils/reset";
+@use "./utils/variables";
+
+@use "./utils/container.scss";
+
+@use "./base/card.scss";
+@use "./base/figures.scss";
+@use "./base/header.scss";
+@use "./base/hero.scss";
+@use "./base/mobile-menu.scss";
+@use "./base/swiper.scss";
+@use "./base/transactions.scss";
+@use "./base/about.scss";
+@use "./base/features.scss";
+@use "./base/section_how_to.scss";
+@use "./base/pricing.scss";
+@use "./base/faq.scss";
+@use "./base/contact.scss";
+@use "./base/footer.scss";
+

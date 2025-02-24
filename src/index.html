@@ -1,199 +1,491 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TradeBlade - Копи-трейдинг 24/7</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <header class="container">
-      <a class="logo" href="#">
-        <img src="./assets/image/logoGroup 35.svg" alt="TradeBlade" />
-        <img src="./assets/image/logoGroup 36.svg" alt="TradeBlade" />
-      </a>
-      <nav class="nav-cont">
-        <ul class="nav-references">
-          <li><a href="#figures ">Цифры</a></li>
-          <li><a href="#transactions">Сделки онлайн</a></li>
-          <li><a href="#about">О компании</a></li>
-          <li><a href="#how-to-start">Как начать</a></li>
-          <li><a href="#pricing">Тарифы</a></li>
-          <li><a href="#reviews">Отзывы</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-        <ul class="nav-btn">
-          <li><a href="#singin" class="nav-btn">Вход</a></li>
-          <li><a href="#register" class="nav-btn">Регистрация</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TradeBlade - Копи-трейдинг 24/7</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <section id="hero">
-      <div class="container">
-        <ul>
-          <li>
-            <div class="hero-text">
-              <h1>
-                Моментально <br />
-                копируй сделки <br />
-                профи трейдеров
-              </h1>
-              <h4>
-                Начни копировать сделки с успешной командой профессиональных
-                <br />
-                трейдеров в автоматическом режиме.
-              </h4>
-              <div class="hero-form">
-                <form action="submit.php" method="POST">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="ваш e-mail"
-                    required
-                  />
-                  <button type="submit" class="hero-btn">Начать</button>
-                </form>
-              </div>
-
-              <p>5 дней бесплатного пользования</p>
+<body>
+  <header>
+    <ul class="container nav-alignment">
+      <li>
+        <div class="logo logo-display">
+          <a href="#">
+            <img src="./assets/image/logo.svg" alt="TradeBlade" />
+          </a>
+        </div>
+      </li>
+      <li>
+        <nav class="nav-cont_header">
+          <ul class="nav-references">
+            <li><a href="#figures">Цифры</a></li>
+            <li><a href="#transactions">Сделки онлайн</a></li>
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#how-to-start">Как начать</a></li>
+            <li><a href="#pricing">Тарифы</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <ul class="nav-btn-container">
+            <li class="logo logo-tablet">
+              <a href="#">
+                <img src="./assets/image/logo.svg" alt="TradeBlade" />
+              </a>
+            </li>
+            <li><button href="#signin" class="nav-btn">Вход</button></li>
+            <li>
+              <button href="#register" class="nav-btn">Регистрация</button>
+            </li>
+          </ul>
+        </nav>
+      </li>
+      <li>
+        <button class="burger-menu" aria-label="Открыть меню">&#9776;</button>
+        <nav class="mobile-menu">
+          <button class="close-menu" aria-label="Закрыть меню">
+            &times;
+          </button>
+          <ul class="mm-list">
+            <li><a href="#figures">Цифры</a></li>
+            <li><a href="#transactions">Сделки онлайн</a></li>
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#how-to-start">Как начать</a></li>
+            <li><a href="#pricing">Тарифы</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <ul class="mm-btn">
+            <li class="btn-register">
+              <button href="#register" class="mm-nav_btn blk">
+                Регистрация
+              </button>
+            </li>
+            <li class="btn-login">
+              <button href="#signin" class="mm-nav_btn">Войти</button>
+            </li>
+          </ul>
+        </nav>
+      </li>
+    </ul>
+  </header>
+  <section id="hero">
+    <div class="container">
+      <ul>
+        <li>
+          <div class="hero-text">
+            <h1 class="fade-in">
+              Моментально <br />
+              копируй сделки <br />
+              профи трейдеров
+            </h1>
+            <h4>
+              Начни копировать сделки с успешной командой профессиональных
+              трейдеров в автоматическом режиме.
+            </h4>
+            <div class="hero-form">
+              <form action="submit.php" method="POST">
+                <input type="email" name="email" id="email" placeholder="ваш e-mail" required />
+                <button type="submit" class="hero-btn">Начать</button>
+              </form>
             </div>
-          </li>
 
-          <li class="dash-box">
-            <div class="box-container">
-              <!-- Первый пунктирный блок -->
-              <div class="box dashed-box">
+            <p>5 дней бесплатного пользования</p>
+          </div>
+        </li>
+
+        <li class="dash-box">
+          <div class="box-container">
+            <img src="./assets/image/Image-cards.svg" alt="dash box" />
+            <!-- <div class="box dashed-box">
                 ETH/USDT
                 <p>Short</p>
                 <div class="percentage">+141%</div>
               </div>
 
-              <!-- Линия -->
               <div class="line"></div>
 
-              <!-- Второй сплошной блок -->
               <div class="box solid-box">
                 ETH/USDT
                 <p>Short</p>
                 <div class="percentage">+116%</div>
               </div>
-              <!-- Линия -->
-              <div class="line line2"></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
 
-    <section id="figures">
-      <div class="container">
-        <ul>
-          <li>
-            <h4>Цифры</h4>
-            <h6>Cентябрь 2022</h6>
-          </li>
-          <li>
-            <p>Торговой прибыли</p>
-            <h3>2756%</h3>
-          </li>
-          <li>
-            <p>фьючерсных и спотовых сделок</p>
-            <h3>67</h3>
-          </li>
-          <li>
-            <p>прибыль подписчиков</p>
-            <h3>375000</h3>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="transactions">
-      <div class="container">
-        <h2>Прошедшие сделки</h2>
-        <p>&bull; Онлайн</p>
-      </div>
-    </section>
-
-    <section id="about">
+              <div class="line line2"></div> -->
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="figures" class="figures">
+    <div class="container">
       <ul>
         <li>
-          <h2>О компании</h2>
+          <h4>Цифры</h4>
+          <h6>Сентябрь 2022</h6>
+        </li>
+        <li>
+          <p>Торговой прибыли</p>
+          <h3 id="profit">0%</h3>
+        </li>
+        <li>
+          <p>Фьючерсных и спотовых сделок</p>
+          <h3 id="deals">0</h3>
+        </li>
+        <li>
+          <p>Прибыль подписчиков</p>
+          <h3 id="subscribers">0</h3>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="transactions" class="transactions">
+    <div class="container">
+      <ul class="transactions-text">
+        <li>
+          <h4 class="fade-in">Прошедшие сделки</h4>
+        </li>
+        <li>
+          <p class="pulsing-text">&bull; Онлайн</p>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <!-- Обертка Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+      <ul class="about-list">
+        <li>
+          <h2 class="fade-in">О компании</h2>
           <p>
-            TradeBlade — это копи-трейдинг 24/7, торговля спотовыми и
-            фьючерсными сделками с высокой прибылью.
+            Мы опытная команда, для которой трейдинг – профессия. TradeBlade
+            является авторизованным официальным брокером биржи Binance.
+            <br /><br />
+            Он представляет пользователям множество преимуществ, таких как
+            более високая скорость синхронизации API и возможность создать
+            учетную запись Binance через платформу TradeBlade всего в 1 клик.
           </p>
         </li>
         <li>
-          <div class="hero-form">
+          <div class="about-form">
+            <h3>
+              Попробуйте сейчас и получите <br />
+              дней бесплатного пользования
+            </h3>
             <form action="submit.php" method="POST">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="ваш e-mail"
-                required
-              />
-              <button type="submit" class="hero-btn">Начать</button>
+              <input type="email" name="email" id="email" placeholder="ваш e-mail" required />
+              <button type="submit" class="hero-btn">попробовать</button>
             </form>
           </div>
         </li>
       </ul>
-    </section>
-
-    <section id="how-to-start">
-      <h2>Как начать</h2>
-      <ol>
-        <li>Создайте аккаунт</li>
-        <li>Подключите API-ключи</li>
-        <li>Настройте аккаунт</li>
-        <li>Запустите копи-трейдинг</li>
-      </ol>
-      <a href="#register" class="btn">Попробовать бесплатно</a>
-    </section>
-
-    <section id="pricing">
-      <h2>Тарифы</h2>
-      <div class="tariff">
-        <h3>STANDART</h3>
-        <p>Автоматическое копирование сделок</p>
-        <p>Личный кабинет</p>
-        <p><strong>$234 / 12 месяцев</strong></p>
-        <a href="#" class="btn">Попробовать</a>
+    </div>
+  </section>
+  <section id="features" class="features">
+    <div class="container features-container">
+      <div class="features-title fade-in">
+        <h2>TRADEBLADE ЭТО</h2>
       </div>
-      <div class="tariff">
-        <h3>VIP</h3>
-        <p>Доступ в VIP-чат</p>
-        <p>Краткосрочные и инвест-сделки</p>
-        <p><strong>$585 / 12 месяцев</strong></p>
-        <a href="#" class="btn">Попробовать</a>
-      </div>
-    </section>
+      <ul class="features-list">
+        <li class="feature-item">
+          <img src="/src/assets/image/Frame 21053.svg" alt="Копи-трейдинг" />
+          <div>
+            <h3>Копи–трейдинг 24/7</h3>
+            <p>
+              Copy-Trading позволяет следить за сделками команды и получать
+              прибыль 24/7 без каких–либо усилий или проблем для вас.
+            </p>
+          </div>
+        </li>
+        <li class="feature-item">
+          <img src="/src/assets/image/Frame 21055.svg" alt="Спотовая торговля" />
+          <div>
+            <h3>Торговля спотовыми и фьючерсными сделками</h3>
+            <p>
+              Платформа для копи–трейдинга поддерживает торговлю как
+              спотовыми, так и фьючерсными сделками на Binance.
+            </p>
+          </div>
+        </li>
+        <li class="feature-item">
+          <img src="/src/assets/image/Frame 21057.svg" alt="Высокая прибыль" />
+          <div>
+            <h3>Высокая прибыль каждый день</h3>
+            <p>
+              Каждая сделка показывает хорошие результаты на рынках за счет
+              хорошего денежного и риск менеджмента.
+            </p>
+          </div>
+        </li>
+        <li class="feature-item">
+          <img src="/src/assets/image/Frame 21059.svg" alt="Курс по трейдингу" />
+          <div>
+            <h3>Собственный курс по трейдингу</h3>
+            <p>
+              В личном кабинете вы найдете наш собственный курс по
+              криптовалютам, который поможет уверенно понимать наши сигналы и
+              разрабатывать свои.
+            </p>
+          </div>
+        </li>
+        <li class="feature-item">
+          <img src="/src/assets/image/Frame 21061.svg" alt="Сильное окружение" />
+          <div>
+            <h3>Сильное окружение</h3>
+            <p>
+              Ты попадаешь в сильное крипто окружение, ведь развиваться легче
+              когда нас много. В чате присутствуют люди из команды, которые
+              помогают и подсказывают.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="how-to-start" class="section-how-to">
+    <div class="container">
+      <h2 class="fade-in">КАК НАЧАТЬ ПОЛЬЗОВАТЬСЯ СЕРВИСОМ</h2>
+      <ul class="how-to-steps">
+        <li class="how-to-step">
+          <h4>Создайте аккаунт</h4>
+          <p>
+            Начните бесплатную 3-дневную пробную версию. Кредитная карта не
+            требуется.
+          </p>
+        </li>
+        <li class="how-to-step">
+          <h4>Подключить обмен API ключами</h4>
+          <p>Просто вставьте свои ключи API из личного кабинета.</p>
+        </li>
+        <li class="how-to-step">
+          <h4>Настройте аккаунт</h4>
+          <p>
+            Поставьте нужные настройки депозита на каждый сигнал и нажмите
+            сохранить.
+          </p>
+        </li>
+        <li class="how-to-step">
+          <h4>Ваш копитрейдер запущен</h4>
+          <p>
+            Просто расслабьтесь и начните получать пассивный доход от
+            криптовалюты с помощью TradeBlade
+          </p>
+        </li>
+      </ul>
+      <button class="cta-button">ПОПРОБОВАТЬ БЕСПЛАТНО</button>
+    </div>
+  </section>
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2 class="pricing-title fade-in">ТАРИФЫ</h2>
 
-    <section id="reviews">
-      <h2>Отзывы</h2>
-      <div class="review">
-        <p>@ArtemGuriev: Общая прибыль 3043.27 USD</p>
-      </div>
-      <div class="review">
-        <p>@sanyaMnS: Общая прибыль 4 405.96 USD</p>
-      </div>
-    </section>
+      <!-- Переключатель -->
+      <ul class="toggle-box">
+        <li>
+          <div class="toggle-container">
+            <button class="toggle-btn active" data-type="spot">СПОТ</button>
+            <button class="toggle-btn" data-type="futures">ФЬЮЧЕРС</button>
+            <span class="toggle-slider"></span>
+          </div>
+        </li>
+        <li>
+          <div class="toggle-container"></div>
+        </li>
+      </ul>
 
-    <section id="faq">
-      <h2>FAQ</h2>
-      <p><strong>Что такое TradeBlade?</strong> - Это сервис копи-трейдинга.</p>
-      <p>
-        <strong>Должен ли я переводить средства?</strong> - Нет, вы управляете
-        ими самостоятельно.
-      </p>
-    </section>
+      <!-- Карточки тарифов -->
+      <ul class="pricing-cards">
+        <!-- STANDARD -->
+        <li class="card standard">
+          <div class="text-box">
+            <h3>STANDART</h3>
+            <ul>
+              <li>&#10003; Ручной трейдинг</li>
+              <li>
+                &#10003; Автоматическое или полуавтоматическое копирование
+                сделок
+              </li>
+              <li>&#10003; Личный кабинет со статистикой</li>
+              <li>
+                &#10003; Среднесрочные сделки с уровнями набора портфеля
+              </li>
+            </ul>
+          </div>
 
-    <footer>
-      <p>© 2025 TradeBlade. Все права защищены.</p>
-    </footer>
-  </body>
+          <div class="price-btn-box">
+            <ul>
+              <li>
+                <div class="price">
+                  <span class="amount">$234</span>
+                  <span class="discount">-35%</span>
+                </div>
+              </li>
+              <li>
+                <select class="duration">
+                  <option>6 месяцев</option>
+                  <option>12 месяцев</option>
+                  <option>18 месяцев</option>
+                </select>
+              </li>
+            </ul>
+
+            <button class="try-btn">
+              ПОПРОБОВАТЬ
+              <p class="trial-text">5 дней бесплатно</p>
+            </button>
+          </div>
+        </li>
+
+        <!-- VIP -->
+        <li class="card vip">
+          <div class="text-box">
+            <h3>VIP</h3>
+            <ul>
+              <li>&#10003; Ручной трейдинг</li>
+              <li>
+                &#10003; Автоматическое или полуавтоматическое копирование
+                сделок
+              </li>
+              <li>&#10003; Личный кабинет со статистикой</li>
+              <li>&#10003; Краткосрочные, среднесрочные и инвест сделки</li>
+              <li>&#10003; Доступ в Vip-чат с командой</li>
+              <li>&#10003; Наш авторский курс по трейдингу</li>
+            </ul>
+          </div>
+
+          <div class="price-btn-box">
+            <ul>
+              <li>
+                <div class="price">
+                  <span class="amount">$585</span>
+                  <span class="discount">-35%</span>
+                </div>
+              </li>
+              <li>
+                <select class="duration">
+                  <option>6 месяцев</option>
+                  <option>12 месяцев</option>
+                  <option>18 месяцев</option>
+                </select>
+              </li>
+            </ul>
+
+            <button class="try-btn">
+              ПОПРОБОВАТЬ
+              <p class="trial-text">5 дней бесплатно</p>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="faq-box">
+        <h2 class="fade-in">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+        <div class="faq-item active">
+          <button class="faq-question">
+            Что такое TradeBlade
+            <span class="faq-icon">&#x2303;</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Мы опытная команда, для которой трейдинг — профессия. TradeBlade
+              является авторизованным официальным брокером биржи Binance.
+            </p>
+            <p>&nbsp;</p>
+            <p>
+              Он представляет пользователям множество преимуществ, таких как
+              более высокая скорость синхронизации API и возможность создать
+              учетную запись Binance через платформу TradeBlade всего в 1
+              клик.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Что TradeBlade предлагает инвесторам
+            <span class="faq-icon">&#x2303;</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              TradeBlade предлагает инструменты для автоматического
+              копирования сделок и аналитики для успешного трейдинга.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Должен ли я перевести свои средства на TradeBlade
+            <span class="faq-icon">&#x2303;</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Нет, все средства остаются на вашем биржевом аккаунте Binance.
+              TradeBlade лишь помогает управлять сделками.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="container contact-container">
+      <ul>
+        <li>
+          <h4>
+            Начните прямо сейчас с бесплатным 5–и дневным пробным периодом!
+          </h4>
+        </li>
+        <li>
+          <div class="contact-form">
+            <form action="submit.php" method="POST">
+              <input type="email" name="email" id="email" placeholder="ваш e-mail" required />
+              <button type="submit" class="hero-btn">
+                Зарегистрироваться
+              </button>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container nav-alignment">
+      <ul class="footer-list">
+        <li>
+          <h6>Быстрая навигация</h6>
+          <nav class="nav-cont_footer">
+            <ul class="nav-references">
+              <li><a href="#figures ">Цифры</a></li>
+              <li><a href="#transactions">Сделки онлайн</a></li>
+              <li><a href="#about">О компании</a></li>
+              <li><a href="#how-to-start">Как начать</a></li>
+              <li><a href="#pricing">Тарифы</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </nav>
+        </li>
+        <li>
+          <a class="logo mb-5" href="#">
+            <img src="./assets/image/logo.svg" alt="TradeBlade" />
+          </a>
+          <p>© 2022 TradeBlade. All rights reserved</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>

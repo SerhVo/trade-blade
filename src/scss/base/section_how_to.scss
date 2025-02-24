@@ -1,0 +1,113 @@
+/* ================= start ============= */
+@use "../utils/mixins";
+.section-how-to {
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 4rem 0;
+  display: flex;
+  position: relative;
+  background-color: var(--lite-purple);
+  clip-path: polygon(0% -45%, 60% 4%, 100% 4%, 100% 100%, 0 100%);
+
+  @include mixins.respond(tablet) {
+    clip-path: polygon(0% -100%, 45% 5%, 100% 5%, 100% 100%, 0 100%);
+  }
+  @include mixins.respond(laptop) {
+    clip-path: polygon(0% -100%, 45% 7%, 100% 7%, 100% 100%, 0 100%);
+  }
+}
+
+.how-to-container {
+  margin: 0 5rem;
+  padding: 3.5rem 0;
+}
+
+.section-how-to h2 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  font-weight: bold;
+  text-align: left;
+  line-height: 3.5rem;
+  transition: 0.3s;
+  margin-bottom: 4.9375rem;
+  @include mixins.respond(mobile) {
+    font-size: 2rem;
+  }
+  @include mixins.respond(laptop) {
+    font-size: 2.4rem;
+  }
+  @include mixins.respond(desktop) {
+    font-size: 2.75rem;
+  }
+}
+
+.how-to-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-bottom: 3.5rem;
+  flex-direction: column;
+
+  @include mixins.respond(tablet) {
+    flex-direction: row;
+  }
+}
+
+.how-to-step {
+  border-left: 0.15rem solid rgba(255, 255, 255, 0.5);
+  padding-left: 2.4375rem;
+  flex: 1;
+  text-align: left;
+  @include mixins.respond(tablet) {
+    border-left: none;
+    padding-left: 0;
+    border-top: 0.15rem solid rgba(255, 255, 255, 0.5);
+    padding-top: 2.4375rem;
+  }
+}
+
+.how-to-step h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  @include mixins.respond(tablet) {
+    font-size: 1.4rem;
+  }
+
+  @include mixins.respond(laptop) {
+    font-size: 1.6rem;
+  }
+
+  @include mixins.respond(desktop) {
+    font-size: 1.75rem;
+  }
+}
+
+.how-to-step p {
+  font-size: 1rem;
+  opacity: 0.8;
+  line-height: 1.625rem;
+  font-weight: 400;
+  @include mixins.respond(laptop) {
+    font-size: 1.25rem;
+  }
+}
+
+.cta-button {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  background: var(--lite-blue);
+  border-radius: 0.1875rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  opacity: 0.8;
+}

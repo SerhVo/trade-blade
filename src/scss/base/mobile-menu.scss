@@ -1,0 +1,148 @@
+@use "../utils/mixins";
+
+/* === Бургер-кнопка === */
+.burger-menu {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--main-text-color);
+  cursor: pointer;
+  z-index: 1100;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  @include mixins.respond(mobile) {
+    display: block;
+  }
+
+  @include mixins.respond(tablet) {
+    display: none;
+  }
+
+  @include mixins.respond(laptop) {
+    display: none;
+  }
+
+  @include mixins.respond(desktop) {
+    display: none;
+  }
+}
+
+.burger-menu.open {
+  display: none;
+}
+
+/* === Мобильное меню === */
+.mobile-menu {
+  display: flex;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+  background: var(--lite-purple);
+  color: var(--main-text-color);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  transition: right 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+/* Меню открыто */
+.mobile-menu.open {
+  right: 0;
+}
+
+/* Кнопка закрытия */
+.close-menu {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mm-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5.25rem;
+  gap: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.mm-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  gap: 1rem;
+}
+.mm-btn li {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 3.25rem;
+  border: 2px solid var(--lite-blue);
+  border-radius: 0.1875rem;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mm-nav_btn {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--lite-blue);
+}
+.blk {
+  color: var(--secondary-text-color);
+}
+
+.btn-login {
+  background-color: rgba(87, 225, 255, 0.5);
+  color: var(--lite-blue);
+}
+
+.btn-register {
+  color: var(--secondary-text-color);
+  background-color: var(--lite-blue);
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-menu.open ul {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@include mixins.respond(tablet) {
+  .mobile-menu {
+    display: none;
+  }
+}

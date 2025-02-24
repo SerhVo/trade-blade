@@ -1,0 +1,158 @@
+/* ========== О компании ========== */
+@use "../utils/mixins";
+
+.about {
+  display: flex;
+  position: relative;
+  background-color: var(--white-color);
+
+  clip-path: polygon(0% -45%, 60% 4%, 100% 4%, 100% 100%, 0 100%);
+
+  @include mixins.respond(tablet) {
+    clip-path: polygon(0% -100%, 45% 5%, 100% 5%, 100% 100%, 0 100%);
+  }
+  @include mixins.respond(laptop) {
+    clip-path: polygon(0% -100%, 45% 7%, 100% 7%, 100% 100%, 0 100%);
+  }
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+  margin: 3rem 0;
+  @include mixins.respond(tablet) {
+    margin: 4rem 0;
+    align-items: center;
+  }
+
+  @include mixins.respond(laptop) {
+    margin: 5rem 0;
+    flex-direction: row;
+  }
+
+  @include mixins.respond(desktop) {
+    margin: 6rem 0;
+  }
+}
+
+.about-list h2 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  text-align: left;
+  line-height: 3.5rem;
+  margin-bottom: 2.5rem;
+  transition: 0.3s;
+  @include mixins.respond(mobile) {
+    font-size: 2rem;
+  }
+  @include mixins.respond(laptop) {
+    font-size: 2.4rem;
+  }
+  @include mixins.respond(desktop) {
+    font-size: 2.75rem;
+  }
+}
+
+.about-list p {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  text-align: left;
+  line-height: 1.2;
+  opacity: 0.8;
+  @include mixins.respond(tablet) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.about-list li:first-child {
+  @include mixins.respond(tablet) {
+    margin-right: 5.5rem;
+  }
+
+  @include mixins.respond(laptop) {
+    margin-right: 10.5rem;
+  }
+
+  @include mixins.respond(desktop) {
+    margin-right: 14.8125rem;
+  }
+}
+
+.about-form {
+  border-radius: 0.25rem;
+  height: auto;
+  background-color: var(--lite-purple);
+  padding: 1rem;
+
+  @include mixins.respond(tablet) {
+    padding: 1.75rem;
+    position: relative;
+  }
+
+  @include mixins.respond(laptop) {
+    width: 33rem;
+    padding: 2rem 4rem;
+  }
+
+  @include mixins.respond(desktop) {
+    width: 40rem;
+    padding: 2rem 4rem;
+  }
+}
+
+.about-form h3 {
+  font-size: 1.25rem;
+  color: var(--main-text-color);
+  line-height: 2.25rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem;
+  @include mixins.respond(tablet) {
+    font-size: 1.4rem;
+  }
+
+  @include mixins.respond(laptop) {
+    font-size: 1.6rem;
+  }
+
+  @include mixins.respond(desktop) {
+    font-size: 1.75rem;
+  }
+}
+
+.about-form input {
+  width: 80%;
+  padding: 1.25rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  background-color: var(--purple-color);
+  transition: 0.3s;
+}
+
+.about-form form {
+  display: flex;
+  width: 100%;
+  background-color: var(--purple-color);
+  flex-direction: column;
+  @include mixins.respond(tablet) {
+    flex-direction: row;
+  }
+}
+
+.tariff,
+.review {
+  background: #1a1a1a;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 5px;
+  max-width: 600px;
+}

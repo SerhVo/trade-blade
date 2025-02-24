@@ -1,0 +1,73 @@
+/* ========== footer ========== */
+@use "../utils/mixins";
+.footer-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  @include mixins.respond(tablet) {
+    flex-direction: row;
+  }
+}
+
+.footer-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+
+  @include mixins.respond(tablet) {
+    flex-direction: column;
+  }
+}
+
+.footer-list h6 {
+  color: var(--main-text-color);
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.3;
+  text-transform: uppercase;
+  line-height: 1.5;
+  transition: 0.3s;
+  @include mixins.respond(tablet) {
+    margin-bottom: 14rem;
+  }
+}
+
+.footer-list p {
+  color: var(--main-text-color);
+  font-size: 0.8rem;
+  opacity: 0.3;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: end;
+  transition: 0.3s;
+}
+
+.nav-cont_footer .nav-references {
+  gap: 1rem !important;
+  flex-direction: column;
+  @include mixins.respond(tablet) {
+    flex-direction: row;
+  }
+}
+.footer-list li:last-child {
+  display: flex;
+  flex-direction: column;
+  @include mixins.respond(tablet) {
+    flex-direction: row;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+.mb-5 {
+  margin-bottom: 5rem;
+  @include mixins.respond(tablet) {
+    margin-bottom: auto;
+  }
+}
