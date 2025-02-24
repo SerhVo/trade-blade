@@ -1253,7 +1253,7 @@ img {
 
 /* ========================features=======================*/
 .features {
-  padding: 6rem 0;
+  margin-bottom: 4.5rem;
   color: var(--main-text-color);
 }
 
@@ -1434,7 +1434,7 @@ img {
 }
 
 .how-to-step {
-  border-left: 0.15rem solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid var(--white-color);
   padding-left: 2.4375rem;
   flex: 1;
   text-align: left;
@@ -1443,7 +1443,7 @@ img {
   .how-to-step {
     border-left: none;
     padding-left: 0;
-    border-top: 0.15rem solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid var(--white-color);
     padding-top: 2.4375rem;
   }
 }
@@ -1544,7 +1544,7 @@ img {
   display: inline-flex;
   justify-content: space-between;
   background: var(--purple-color);
-  padding: 0.5rem;
+  padding: 0.25rem;
   margin-bottom: 2.75rem;
   width: 100%;
 }
@@ -1590,7 +1590,7 @@ img {
   background: transparent;
   border: none;
   padding: 0.5rem 2rem;
-  color: var(--lite-purple);
+  color: var(--lite-blue);
   font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
@@ -1607,8 +1607,8 @@ img {
 .toggle-slider {
   position: absolute;
   top: 5px;
-  left: 0;
-  width: 50%;
+  left: 5px;
+  width: 49%;
   height: 85%;
   background: var(--lite-blue);
   border-radius: 0.25rem;
@@ -1761,7 +1761,7 @@ img {
   text-align: left;
   line-height: 3.5rem;
   margin-bottom: 2.5rem;
-  transition: 0.3s;
+  transition: 0.75s;
 }
 @media (max-width: 480px) {
   .faq h2 {
@@ -1783,7 +1783,7 @@ img {
   overflow: hidden;
   margin-bottom: 10px;
   background: #f0f0f0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 
 .faq-item.active {
@@ -1821,7 +1821,7 @@ img {
 }
 
 .faq-icon {
-  transition: transform 0.3s ease;
+  transition: transform 0.75s ease;
   font-weight: 400;
   opacity: 0.5;
 }
@@ -1839,7 +1839,7 @@ img {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 1.5s ease, opacity 1.5s ease;
+  transition: max-height 0.75s ease, opacity 0.75s ease;
 }
 
 .faq-item.active .faq-answer {
@@ -1999,7 +1999,7 @@ img {
 }
 @media (min-width: 768px) {
   .footer-list li:last-child {
-    flex-direction: row;
+    align-items: flex-end;
     align-content: space-between;
     flex-wrap: wrap;
     justify-content: flex-end;
